@@ -180,7 +180,7 @@ st.title("🌐 Web Q&A Bot")
 st.markdown("Ask questions about **any website** and get answers powered by **Gemini AI**!")
 
 with st.container():
-    st.subheader("Step 1: Enter website URL & your question")
+    st.subheader("Enter website URL & your question")
     col1, col2 = st.columns([2,3])
     with col1:
         url = st.text_input("Website URL", placeholder="https://example.com")
@@ -230,3 +230,4 @@ if scrape_button:
     st.markdown("---")
     st.subheader("💡 Answer:")
     st.markdown(f"<div style='background-color:#e0f7fa; padding:15px; border-radius:10px;'>{answer}</div>", unsafe_allow_html=True)
+
